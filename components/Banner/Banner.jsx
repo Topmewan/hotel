@@ -16,7 +16,7 @@ const Banner = ({purpose,imageUrl,title1,title2,desc1,desc2,linkName,buttonText}
         <Text fontSize={'lg'} pt={'3'} pb={'3'} color={'gray.700'}>
           {desc1}<br/>{desc2}
         </Text>
-        <Button fontSize={'xl'} bg={'blue.300'} color={'white'}>
+        <Button fontSize={'xl'} colorScheme={'linkedin'}>
           <Link href={linkName}>{buttonText}</Link>
         </Button>
       </Box>

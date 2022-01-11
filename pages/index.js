@@ -1,8 +1,9 @@
 import Banner from "../components/Banner/Banner";
+import {Box, Flex} from "@chakra-ui/react";
 
 const Home = () => {
   return (
-    <div>
+    <Box>
       <Banner
         purpose='Аренда дома'
         title1='Аренда домов для'
@@ -13,17 +14,24 @@ const Home = () => {
         linkName='/search?purpose=for-rent'
         buttonText='Подробнее'
       />
+      <Flex flexWrap={'wrap'}>
+
+      </Flex>
+
       <Banner
         purpose='Покупка дома'
-        title1='Выбери и купи'
-        title2='Дом мечты'
+        title1='Покупка домой для '
+        title2='всех'
+        imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
         desc1='Апартаменты,Виллы,Дома'
         desc2='и другое'
-        buttonText='Explore Buying'
+        buttonText='Подробнее'
         linkName='/search?purpose=for-sale'
-        imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
       />
-    </div>
+      <Flex flexWrap={'wrap'}>
+
+      </Flex>
+    </Box>
   );
 };
 
